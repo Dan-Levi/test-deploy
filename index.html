@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Official Procrastinator's Hub</title>
+    <style>
+        /* Some basic styling to make it look half-decent, but not too good, because... procrastination. */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* The official font of not taking things seriously */
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff4500;
+            text-shadow: 2px 2px #ccc;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #dc143c;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to The Procrastinator's Hub!</h1>
+        <p>Why do today what you can put off until tomorrow? Or the day after. Or maybe next week. Let's be honest, probably never.</p>
+        
+        <h2>Our Mission Statement (We'll finish it later)</h2>
+        <p>Our goal is to empower individuals to achieve... something. Eventually. We are committed to providing the best tools for not doing things. Stay tuned for updates (don't hold your breath).</p>
+
+        <p>Click the button below for a burst of motivation!</p>
+        <button onclick="motivateMe()">Motivate Me!</button>
+        <div id="message"></div>
+    </div>
+
+    <footer>
+        <p>&copy; Sometime this century. All rights reserved (maybe).<br>
+        This site was built with 100% recycled electrons and pure, unadulterated delay tactics.</p>
+    </footer>
+
+    <script>
+        function motivateMe() {
+            const messages = [
+                "Maybe later.",
+                "Is it time for a nap yet?",
+                "Error 404: Motivation not found.",
+                "You're doing great! At... sitting there.",
+                "I believe in you! (to watch another cat video)",
+                "Let's just think about starting for a bit.",
+                "How about a snack first?",
+                "Did you check your email? You should probably check your email again.",
+                "Success is just around the corner! A very, very distant corner."
+            ];
+            const messageDiv = document.getElementById('message');
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            messageDiv.innerText = messages[randomIndex];
+        }
+    </script>
+</body>
+</html>
